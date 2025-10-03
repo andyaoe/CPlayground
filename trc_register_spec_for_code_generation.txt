@@ -1,0 +1,170 @@
+==================================================
+REGISTER SPECIFICATIONS FOR CODE GENERATION
+==================================================
+
+SET 1
+* Register Name: SWITCH
+* Register Address: 0x01
+* Function Signature: int write_switch(uint32 configuration);
+* Macros/Bits:
+    * TX_HPA_ENABLE = 0x1
+    * RX_LNA_ENABLE = 0x2
+    * TRC_ENABLE = 0x4
+
+--------------------------------------------------
+
+SET 2
+* Register Name: RF_GAIN_1
+* Register Address: 0x03
+* Function Signature: int write_rf_gain_1(uint32 configuration);
+* Macros/Bits:
+    * MUST_SET = 0x38000000
+    * GAIN1_0 = 0x000
+    * GAIN1_1 = 0x100
+    * GAIN1_2 = 0x200
+    * GAIN1_3 = 0x300
+    * GAIN1_4 = 0x400
+    * GAIN1_5 = 0x500
+    * GAIN1_6 = 0x600
+    * GAIN1_7 = 0x700
+    * GAIN1_8 = 0x800
+    * GAIN1_9 = 0x900
+    * GAIN1_10 = 0xA00
+    * GAIN1_11 = 0xB00
+    * GAIN1_12 = 0xC00
+    * GAIN1_13 = 0xD00
+    * GAIN1_14 = 0xE00
+    * GAIN1_15 = 0xF00
+    * GAIN2_0 = 0x0000
+    * GAIN2_1 = 0x1000
+    * GAIN2_2 = 0x2000
+    * GAIN2_3 = 0x3000
+    * GAIN2_4 = 0x4000
+    * GAIN2_5 = 0x5000
+    * GAIN2_6 = 0x6000
+    * GAIN2_7 = 0x7000
+    * GAIN2_8 = 0x8000
+    * GAIN2_9 = 0x9000
+    * GAIN2_10 = 0xA000
+    * GAIN2_11 = 0xB000
+    * GAIN2_12 = 0xC000
+    * GAIN2_13 = 0xD000
+    * GAIN2_14 = 0xE000
+    * GAIN2_15 = 0xF000
+    * GAIN3_0 = 0x00000
+    * GAIN3_1 = 0x10000
+    * GAIN3_2 = 0x20000
+    * GAIN3_3 = 0x30000
+    * GAIN3_4 = 0x40000
+    * GAIN3_5 = 0x50000
+    * GAIN3_6 = 0x60000
+    * GAIN3_7 = 0x70000
+    * GAIN3_8 = 0x80000
+    * GAIN3_9 = 0x90000
+    * GAIN3_10 = 0xA0000
+    * GAIN3_11 = 0xB0000
+    * GAIN3_12 = 0xC0000
+    * GAIN3_13 = 0xD0000
+    * GAIN3_14 = 0xE0000
+    * GAIN3_15 = 0xF0000
+    * GAIN4_0 = 0x000000
+    * GAIN4_1 = 0x100000
+    * GAIN4_2 = 0x200000
+    * GAIN4_3 = 0x300000
+    * GAIN4_4 = 0x400000
+    * GAIN4_5 = 0x500000
+    * GAIN4_6 = 0x600000
+    * GAIN4_7 = 0x700000
+    * GAIN4_8 = 0x800000
+    * GAIN4_9 = 0x900000
+    * GAIN4_10 = 0xA00000
+    * GAIN4_11 = 0xB00000
+    * GAIN4_12 = 0xC00000
+    * GAIN4_13 = 0xD00000
+    * GAIN4_14 = 0xE00000
+    * GAIN4_15 = 0xF00000
+    * PHASE_0 = 0x0000000
+    * PHASE_1 = 0x1000000
+    * PHASE_2 = 0x2000000
+    * PHASE_3 = 0x3000000
+    * PHASE_4 = 0x4000000
+    * PHASE_5 = 0x5000000
+    * PHASE_6 = 0x6000000
+    * PHASE_7 = 0x7000000
+    * PHASE_7 = 0x7000000
+
+--------------------------------------------------
+
+SET 3
+* Register Name: RF_GAIN_2
+* Register Address: 0x04
+* Function Signature: int write_rf_gain_2(uint32 configuration);
+* Macros/Bits:
+    * MUST_SET = 0x60C
+    * PARABOLIC_FREQUENCY_0 = 0x00000
+    * PARABOLIC_FREQUENCY_1 = 0x0400000
+    * PARABOLIC_FREQUENCY_2 = 0x0800000
+    * PARABOLIC_FREQUENCY_3 = 0x0C00000
+    * PARABOLIC_FREQUENCY_4 = 0x1000000
+    * PARABOLIC_FREQUENCY_5 = 0x1400000
+    * PARABOLIC_FREQUENCY_6 = 0x1800000
+    * PARABOLIC_FREQUENCY_7 = 0x1C00000
+    * PARABOLIC_FREQUENCY_8 = 0x2000000
+    * PARABOLIC_FREQUENCY_9 = 0x2400000
+    * PARABOLIC_FREQUENCY_10 = 0x2800000
+    * PARABOLIC_FREQUENCY_11 = 0x2C00000
+    * PARABOLIC_FREQUENCY_12 = 0x3000000
+    * PARABOLIC_FREQUENCY_13 = 0x3400000
+    * PARABOLIC_FREQUENCY_14 = 0x3800000
+    * PARABOLIC_FREQUENCY_15 = 0x3C00000
+    * PARABOLIC_DEPTH_0 = 0x00000000
+    * PARABOLIC_DEPTH_1 = 0x4000000
+    * PARABOLIC_DEPTH_2 = 0x8000000
+    * PARABOLIC_DEPTH_3 = 0xC000000
+    * PARABOLIC_DEPTH_4 = 0x10000000
+    * PARABOLIC_DEPTH_5 = 0x14000000
+    * PARABOLIC_DEPTH_6 = 0x18000000
+    * PARABOLIC_DEPTH_7 = 0x1C000000
+    * UPSLODE_0 = 0x00000000
+    * UPSLODE_1 = 0x20000000
+    * UPSLODE_2 = 0x40000000
+    * UPSLODE_3 = 0x60000000
+    * UPSLODE_4 = 0x80000000
+    * UPSLODE_5 = 0xA0000000
+    * UPSLODE_6 = 0xC0000000
+    * UPSLODE_7 = 0xE0000000
+
+--------------------------------------------------
+
+SET 4
+* Register Name: MIXER/GAIN Enable
+* Register Address: 0x17
+* Function Signature: int write_mixer_gain(uint32 configuration);
+* Macros/Bits:
+    * RF_DISABLE = 0x0
+    * RF_ENABLE = 0x00FFFFFF
+
+--------------------------------------------------
+
+SET 5
+* Register Name: Power on self test results (read only)
+* Register Address: 0x20
+* Function Signature: int read_power_on_self_test_results();
+* Macros/Bits:
+    * MASK = 0x3FF
+
+--------------------------------------------------
+
+SET 6
+* Register Name: Mixer Temperature (read only)
+* Register Address: 0x27
+* Function Signature: int read_mixer_temp();
+* Macros/Bits:
+    * MASK = 0xF
+
+--------------------------------------------------
+
+SET 7
+* Register Name: TBIT (special case)
+* Register Address: 0xB
+* Function Signature: int read_tbit(int channel);
